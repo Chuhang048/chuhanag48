@@ -1,0 +1,37 @@
+---
+layout: TechPost
+title: 论文发表索引 - 楚航科技
+image: /logo.png
+---
+
+::: slot name
+论文发表索引
+:::
+
+1. W. Zhang, N. Li, E. Kasper, Z. Zheng, and L. Shi, "Impact Analysis of High-Frequency Material and PCB Fabrication Technology on Antenna Design for 77/79 GHz Automotive Radar," IEEE MTT-S, Asia-Pacific Microwave Conference (APMC), pp. 756-758, Dec. 2019.
+2. 张我弓, J. Schulze, and E. Kasper, "基于微缩雷达应用的硅基毫米波片上天线," 国家中文核心期刊，中国科技核心期刊《现代雷达》Modern Radar，Vol. 41, No. 11, pp. 42-50, Nov. 2019.
+3. 张我弓, "硅基单片集成肖特基二极管全波整流天线," 2019年全国天线年会（National Conference on Antenna）论文集, pp. 912-914, July 2019, 入围优秀论文竞赛单元.
+4. 张我弓, J. Schulze, and E. Kasper, "基于微缩雷达应用的硅基毫米波片上天线," 第二届现代雷达论坛2019国际智能化探测感知大会论文集, pp. 49-58, July 2019, 作为会议优秀论文直接入选中文核心《现代雷达》2019年11月份期刊.
+5. W. Zhang, E. Kasper, and J. Schulze, "A Monolithically Integrated 80-GHz Full-Wave Rectenna With Silicon Schottky Diodes Under MOTT Operation," IEEE MTT-S, International Wireless Symposium (IWS), pp. 1-4, May 2019, FLASH Competition Best Paper Award.
+6. W.Zhang, E. Kasper, and J. Schulze, "An 82-GHz 14.6-mW Output Power Silicon Impact Ionization Avalanche Transit Time Transmitter With Monolithically Integrated Coplanar Waveguide Patch Antenna," IEEE Transactions on Microwave Theory and Techniques (T-MTT), vol. 67, no. 1, pp. 308-317, Jan. 2019.
+7. W. Zhang, M. Oehme, K. Matthies, V. Stefani, A. I. Raju, E. Kasper, and J. Schulze, "Small-signal IMPATT diode characterization for millimeter-wave power applications in monolithic scenarios," 46th European Solid State Device Research Conference (ESSDERC) Proceedings, pp. 109-112, Sep. 2016.
+8. W. Zhang, M. Oehme, K. Kostecki, K. Matthies, V. Stefani, A. I. Raju, D. Noll, V.S. S. Srinivasan, R. Körner, E. Kasper, and J. Schulze, "S-parameter based device-level C-V measurement of p-i-n single-drift IMPATT diode for millimeter-wave applications," IEEE MTT-S, International Wireless Symposium (IWS), pp. 1-4, Mar. 2016.
+9. W. Zhang, Y. Yamamoto, M. Oehme, K. Matthies, A. I. Raju, V.S. S. Srinivasan, R. Körner, M. Gollhofer, S. Bechler, H. Funk, B. Tillack, E. Kasper, and J. Schulze, "S-parameter characterization and lumped-element modelling of millimeter-wave single-drift impact-ionization avalanche transit-time diode," Japanese Journal of Applied Physics (JJAP), vol. 55, no. 4S, pp. 04EF03:1-6, Mar. 2016.
+10. W. Zhang and Y. Yamamoto, M. Oehme, K. Matthies, B. Tillack, E. Kasper, and J. Schulze, "S-parameter characterization and lumped-element modelling of mm-wave single-drift IMPATT diode," Japan Society of Applied Physics, 47th International Conference on Solid State Devices and Materials (SSDM), E-7-4, pp. 802-803, Sep. 2015.
+11. W. Zhang, M. Oheme, K. Kostecki, K. Matthies, V. Stefani, E. Kasper, and J. Schulze, "Systematic characterization of silicon IMPATT diode for monolithic E-band amplifier design," German Microwave Conference (GeMiC), pp. 135-138, Mar. 2015.
+12. W. Zhang and E. Kasper, M. Oehme, M. Kaschel, V. Stefani, and J. Schulze, "A monolithic integrated 85 GHz schottky rectenna with dynamic tuning range of the conversion voltage," IEEE MTT-S, International Symposium on Radio-Frequency Integration Technology (RFIT), TH1A-2, pp. 1-3, Aug. 2014.
+13. W. Zhang, K. Ye, S. Bechler, K. Ulbricht, M. Oehme, E. Kasper, and J. Schulze, "A reliable 40 GHz opto-electrical system for characterization of frequency response of Ge PIN photo detectors," International Silicon-Germanium Technology and Device Meeting (ISTDM), pp. 117-118, Jun. 2014.
+14. W. Zhang, M. Kaynak, M. Wietstruck, V. Mühlhaus, and B. Tillack, "EM and lumped-element model of BiCMOS embedded capacitive RF-MEMS switch," German Microwave Conference (GeMiC), pp. 1-4, Mar. 2012.
+15. K. Ye, W. Zhang, M. Oehme, M. Schmid, M. Gollhofer, K. Kostecki, D. Widmann, R. Körner, E. Kasper, and J. Schulze, "Absorption coefficients of GeSn extracted from PIN photodetector response," Solid-State Electronics, vol. 110, pp. 71-75, Feb. 2015.
+16. E. Kasper, W. Zhang, "SIMMWIC integration of millimeter-wave antenna with two terminal devices for medical applications," IEEE, Silicon Monolithic Integrated Circuits in RF Systems (SiRF), pp.1-3, Jan. 2015.
+17. E. Kasper, W. Zhang, Chapter 11: Device Operation as Crystal Quality Probe of Silicon; Germanium, and Their Alloys: Growth, Defects, Impurities, and Nanocrystals, CRC Press, pp. 353-374, Dec. 2014.
+18. K. Ye, W. Zhang, M. Oehme, M. Schmid, M. Gollhofer, K. Kostecki, D. Widmann, E. Kasper, and J. Schulze, "Extraction of GeSn absorption coefficients from photodetector response," International Silicon-Germanium Technology and Device Meeting (ISTDM), pp. 137-138, Jun. 2014.
+19. M. Wietstruck, M. Kaynak, W. Zhang, and B. Tillack, "Electro-thermal-mechanical analysis of a BiCMOS embedded RF-MEMS switch for temperatures from -55°C to +125°C," IEEE, Silicon Monolithic Integrated Circuits in RF Systems (SiRF) , pp.18-20, Jan. 2013.
+20. M. Kaynak, M. Wietstruck, W. Zhang, J. Drews, R. Barth, D. Knoll, F. Korndörfer, R. Scholz, K. Schulz, C. Wipf, B. Tillack, K. Kaletta, M. v. Suchodoletz, K. Zoschke, M. Wilke, O. Ehrmann, A. C. Ulusoy, T. Purtova, G. Liu, and H. Schumacher, "Packaged BiCMOS embedded RF-MEMS switches with integrated inductive loads," IEEE, International Microwave Symposium (IMS), MTT-S, pp.1-3, Jun. 2012.
+21. M. Kaynak, M. Wietstruck, W. Zhang, J. Drews, R. Scholz, D. Knoll, F. Korndörfer, C. Wipf, K. Schulz, M. Elkhouly, K. Kaletta, M. v. Suchodoletz, K. Zoschke, M. Wilke, O. Ehrmann, V. Mühlhaus, G. Liu, T. Purtova, A. C. Ulusoy, H. Schumacher, and B. Tillack, "RF-MEMS switch module in a 0.25 μm BiCMOS technology," IEEE, Silicon Monolithic Integrated Circuits in RF Systems (SiRF), pp.25-28, Jan. 2012.
+22. M. Kaynak, M. Wietstruck, W. Zhang, J. Drews, D. Knoll, F. Korndörfer, C. Wipf, K. Schulz, M. v. Suchodoletz, K. Zoschke, K. Kaletta, O. Ehrmann, S. Leidich, S. Kurth, and B. Tillack, "MEMS module integration into SiGe BiCMOS technology for embedded system applications," Semiconductor Conference Dresden (SCD), pp.1-4, Sep. 2011.
+23. M. Kaynak, M. Purdy, M. Wietstruck, W. Zhang, and B. Tillack, "A CMOS based fast high-voltage generation circuit for BiCMOS embedded RF-MEMS applications," IEEE, Silicon Monolithic Integrated Circuits in RF Systems (SiRF), pp.21-23, Jan. 2013.
+24. N. T. Matabosch, F. Coccetti, M. Kaynak, W. Zhang, B. Tillack, R. Plana, and J. L. Cazaux, " An accurate and versatile equivalent circuit model for RF-MEMS circuit optimization in BiCMOS technology," European Microwave Integrated Circuits Conference (EuMiC), pp.143-146, Oct. 2012.
+25. M. Gollhofer, M. Oehme, K. Kostecki, K. Ye, S. Bechler, K. Ulbricht, M. Schmid, M. Kaschel, R. Körner, W. Zhang, E. Kasper, and J. Schulze, " High speed vertical GeSn photodiodes on Si," IEEE, International Conference on Group IV Photonics (GFP), pp.19-20, Aug. 2014.
+26. M. Oehme, K. Kostecki, K. Ye, S. Bechler, K. Ulbricht, M. Schmid, M. Kaschel, M. Gollhofer, R. Körner, W. Zhang, E. Kasper, and J. Schulze, "GeSn-on-Si normal incidence photodetectors with bandwidths more than 40 GHz," Optics Express, vol. 22, no. 1, pp. 839-846, Jan. 2014.
+27. R. Körner, D. Schwarz, I. A. Fischer, L. Augel, S. Bechler, L. Hänel, M. Kern, M. Oehme, E. Rolseth, B. Schwartz, D. Weisshaupt, W. Zhang, J. Schulze, "The Zener-Emitter: A Novel Superluminescent Ge Optical Waveguide-Amplifier with 4.7 dB Gain at 92 mA Based on Free-Carrier Modulation by Direct Zener Tunneling Monolithically Integrated on Si," IEEE, 62nd International Electron Device Meeting (IEDM), Dec. 2016, Best Paper Award.

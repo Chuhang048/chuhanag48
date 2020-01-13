@@ -1,0 +1,284 @@
+diff --git a/node_modules/vue-awesome-swiper/.package.json.swp b/node_modules/vue-awesome-swiper/.package.json.swp
+new file mode 100644
+index 0000000..292e7d3
+Binary files /dev/null and b/node_modules/vue-awesome-swiper/.package.json.swp differ
+diff --git a/node_modules/vue-awesome-swiper/src/index.js b/node_modules/vue-awesome-swiper/src/index.js
+index ca4d34f..357b579 100644
+--- a/node_modules/vue-awesome-swiper/src/index.js
++++ b/node_modules/vue-awesome-swiper/src/index.js
+@@ -1,26 +1,24 @@
+-
+ /*
+-* VueAwesomeSwiper
+-* Author: surmon@foxmail.com
+-* Github: https://github.com/surmon-china/vue-awesome-swiper
+-*/
+-
++ * VueAwesomeSwiper
++ * Author: surmon@foxmail.com
++ * Github: https://github.com/surmon-china/vue-awesome-swiper
++ */
+ 
+-import _Swiper from 'swiper/dist/js/swiper.js'
+-import SlideComponent from './slide.vue'
+-import SwiperComponent from './swiper.vue'
++import _Swiper from "swiper/dist/js/swiper.js";
++import SlideComponent from "./slide.vue";
++import SwiperComponent from "./swiper.vue";
+ 
+-const Swiper = window.Swiper || _Swiper
+-const swiper = SwiperComponent
+-const swiperSlide = SlideComponent
+-const install = function (Vue, globalOptions) {
++const Swiper = (typeof window !== "undefined" && window.Swiper) || _Swiper;
++const swiper = SwiperComponent;
++const swiperSlide = SlideComponent;
++const install = function(Vue, globalOptions) {
+   if (globalOptions) {
+-    SwiperComponent.props.globalOptions.default = () => globalOptions
++    SwiperComponent.props.globalOptions.default = () => globalOptions;
+   }
+-  Vue.component(SwiperComponent.name, SwiperComponent)
+-  Vue.component(SlideComponent.name, SlideComponent)
+-}
+-const VueAwesomeSwiper = { Swiper, swiper, swiperSlide, install }
++  Vue.component(SwiperComponent.name, SwiperComponent);
++  Vue.component(SlideComponent.name, SlideComponent);
++};
++const VueAwesomeSwiper = { Swiper, swiper, swiperSlide, install };
+ 
+-export default VueAwesomeSwiper
+-export { Swiper, swiper, swiperSlide, install }
++export default VueAwesomeSwiper;
++export { Swiper, swiper, swiperSlide, install };
+diff --git a/node_modules/vue-awesome-swiper/src/ssr.js b/node_modules/vue-awesome-swiper/src/ssr.js
+index 8708990..86a5fc6 100644
+--- a/node_modules/vue-awesome-swiper/src/ssr.js
++++ b/node_modules/vue-awesome-swiper/src/ssr.js
+@@ -1,136 +1,131 @@
+-
+ /*
+-* VueAwesomeSwiper ssr.js
+-* Author: surmon@foxmail.com
+-* Github: https://github.com/surmon-china/vue-awesome-swiper
+-*/
++ * VueAwesomeSwiper ssr.js
++ * Author: surmon@foxmail.com
++ * Github: https://github.com/surmon-china/vue-awesome-swiper
++ */
+ 
+ // Require sources
+-import _Swiper from 'swiper/dist/js/swiper.js'
+-import objectAssign from 'object-assign'
++import _Swiper from "swiper/dist/js/swiper.js";
++import objectAssign from "object-assign";
+ 
+-const Swiper = window.Swiper || _Swiper
++const Swiper = (typeof window !== "undefined" && window.Swiper) || _Swiper;
+ 
+ // as of swiper 4.0.7
+ // http://idangero.us/swiper/api/#events
+ const DEFAULT_EVENTS = [
+-  'beforeDestroy',
+-  'slideChange',
+-  'slideChangeTransitionStart',
+-  'slideChangeTransitionEnd',
+-  'slideNextTransitionStart',
+-  'slideNextTransitionEnd',
+-  'slidePrevTransitionStart',
+-  'slidePrevTransitionEnd',
+-  'transitionStart',
+-  'transitionEnd',
+-  'touchStart',
+-  'touchMove',
+-  'touchMoveOpposite',
+-  'sliderMove',
+-  'touchEnd',
+-  'click',
+-  'tap',
+-  'doubleTap',
+-  'imagesReady',
+-  'progress',
+-  'reachBeginning',
+-  'reachEnd',
+-  'fromEdge',
+-  'setTranslate',
+-  'setTransition',
+-  'resize'
+-]
++  "beforeDestroy",
++  "slideChange",
++  "slideChangeTransitionStart",
++  "slideChangeTransitionEnd",
++  "slideNextTransitionStart",
++  "slideNextTransitionEnd",
++  "slidePrevTransitionStart",
++  "slidePrevTransitionEnd",
++  "transitionStart",
++  "transitionEnd",
++  "touchStart",
++  "touchMove",
++  "touchMoveOpposite",
++  "sliderMove",
++  "touchEnd",
++  "click",
++  "tap",
++  "doubleTap",
++  "imagesReady",
++  "progress",
++  "reachBeginning",
++  "reachEnd",
++  "fromEdge",
++  "setTranslate",
++  "setTransition",
++  "resize"
++];
+ 
+ // swiperDirective
+ const swiperDirective = globalOptions => {
+-
+   // Get swiper instace name in directive
+   const getInstanceName = (el, binding, vnode) => {
+-    let instanceName = null
++    let instanceName = null;
+     if (binding.arg) {
+-      instanceName = binding.arg
+-    } else if (vnode.data.attrs && (vnode.data.attrs.instanceName || vnode.data.attrs['instance-name'])) {
+-      instanceName = (vnode.data.attrs.instanceName || vnode.data.attrs['instance-name'])
++      instanceName = binding.arg;
++    } else if (vnode.data.attrs && (vnode.data.attrs.instanceName || vnode.data.attrs["instance-name"])) {
++      instanceName = vnode.data.attrs.instanceName || vnode.data.attrs["instance-name"];
+     } else if (el.id) {
+-      instanceName = el.id
++      instanceName = el.id;
+     }
+-    return instanceName || 'swiper'
+-  }
++    return instanceName || "swiper";
++  };
+ 
+   return {
+-
+     // Init
+     bind(el, binding, vnode) {
+-      const self = vnode.context
+-      if (el.className.indexOf('swiper-container') === -1) {
+-        el.className += ((el.className ? ' ' : '') + 'swiper-container')
++      const self = vnode.context;
++      if (el.className.indexOf("swiper-container") === -1) {
++        el.className += (el.className ? " " : "") + "swiper-container";
+       }
+     },
+ 
+     // DOM inserted
+     inserted(el, binding, vnode) {
+-      const self = vnode.context
+-      const options = binding.value
+-      const instanceName = getInstanceName(el, binding, vnode)
+-      let swiper = self[instanceName]
++      const self = vnode.context;
++      const options = binding.value;
++      const instanceName = getInstanceName(el, binding, vnode);
++      let swiper = self[instanceName];
+ 
+       // Emit event in Vue directive
+       const eventEmit = (vnode, name, data) => {
+-        const handlers = (vnode.data && vnode.data.on) || 
+-                         (vnode.componentOptions && vnode.componentOptions.listeners)
+-        if (handlers && handlers[name]) handlers[name].fns(data)
+-      }
++        const handlers = (vnode.data && vnode.data.on) || (vnode.componentOptions && vnode.componentOptions.listeners);
++        if (handlers && handlers[name]) handlers[name].fns(data);
++      };
+ 
+       if (!swiper) {
+-        const swiperOptions = objectAssign({}, globalOptions, options)
+-        swiper = self[instanceName] = new Swiper(el, swiperOptions)
++        const swiperOptions = objectAssign({}, globalOptions, options);
++        swiper = self[instanceName] = new Swiper(el, swiperOptions);
+         DEFAULT_EVENTS.forEach(eventName => {
+           swiper.on(eventName, function() {
+-            eventEmit(vnode, eventName, ...arguments)
+-            eventEmit(vnode, eventName.replace(/([A-Z])/g, '-$1'), ...arguments)
+-          })
+-        })
++            eventEmit(vnode, eventName, ...arguments);
++            eventEmit(vnode, eventName.replace(/([A-Z])/g, "-$1"), ...arguments);
++          });
++        });
+       }
+ 
+-      eventEmit(vnode, 'ready', swiper)
++      eventEmit(vnode, "ready", swiper);
+     },
+ 
+     // Parse options change
+     componentUpdated(el, binding, vnode) {
+-      const instanceName = getInstanceName(el, binding, vnode)
+-      const swiper = vnode.context[instanceName]
++      const instanceName = getInstanceName(el, binding, vnode);
++      const swiper = vnode.context[instanceName];
+       if (swiper) {
+-        swiper.update && swiper.update()
+-        swiper.navigation && swiper.navigation.update()
+-        swiper.pagination && swiper.pagination.render()
+-        swiper.pagination && swiper.pagination.update()
++        swiper.update && swiper.update();
++        swiper.navigation && swiper.navigation.update();
++        swiper.pagination && swiper.pagination.render();
++        swiper.pagination && swiper.pagination.update();
+       }
+     },
+ 
+     // Destroy this directive
+     unbind(el, binding, vnode) {
+-      const instanceName = getInstanceName(el, binding, vnode)
+-      const swiper = vnode.context[instanceName]
++      const instanceName = getInstanceName(el, binding, vnode);
++      const swiper = vnode.context[instanceName];
+       if (swiper) {
+-        swiper.destroy && swiper.destroy()
+-        delete vnode.context[instanceName]
++        swiper.destroy && swiper.destroy();
++        delete vnode.context[instanceName];
+       }
+     }
+-  }
+-}
++  };
++};
+ 
+ // swiperDirective
+-const swiper = swiperDirective({})
++const swiper = swiperDirective({});
+ 
+ // Global swiper default options
+-const install = function (Vue, globalOptions = {}) {
+-
++const install = function(Vue, globalOptions = {}) {
+   // Mount swiper directive for Vue global
+-  Vue.directive('swiper', swiperDirective(globalOptions))
+-}
++  Vue.directive("swiper", swiperDirective(globalOptions));
++};
+ 
+-const VueAwesomeSwiper = { Swiper, swiper, install }
++const VueAwesomeSwiper = { Swiper, swiper, install };
+ 
+-export { Swiper, swiper, install }
+-export default VueAwesomeSwiper
++export { Swiper, swiper, install };
++export default VueAwesomeSwiper;
+diff --git a/node_modules/vue-awesome-swiper/src/swiper.vue b/node_modules/vue-awesome-swiper/src/swiper.vue
+index 2fdb1d5..fb6781e 100644
+--- a/node_modules/vue-awesome-swiper/src/swiper.vue
++++ b/node_modules/vue-awesome-swiper/src/swiper.vue
+@@ -14,7 +14,7 @@
+ <script>
+   // require sources
+   import _Swiper from 'swiper/dist/js/swiper.js'
+-  const Swiper = window.Swiper || _Swiper
++  const Swiper = typeof window !== 'undefined' && window.Swiper || _Swiper
+ 
+   // pollfill
+   if (typeof Object.assign != 'function') {

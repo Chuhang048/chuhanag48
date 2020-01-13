@@ -1,0 +1,23 @@
+{
+  "scripts": {
+    "dev": "vuepress dev",
+    "build": "vuepress build",
+    "postinstall": "patch-package"
+  },
+  "dependencies": {
+    "bulma": "^0.7.5",
+    "social-share.js": "^1.0.16",
+    "vue-awesome-swiper": "^3.1.3",
+    "vue-burger-button": "^0.1.2"
+  },
+  "devDependencies": {
+    "@vuepress/plugin-google-analytics": "^1.1.0",
+    "node-sass": "^4.12.0",
+    "patch-package": "^6.2.0",
+    "sass-loader": "^8.0.0",
+    "vue-particles": "^1.0.9",
+    "vuepress": "^1.1.0",
+    "vuepress-plugin-seo": "^0.1.2",
+    "vuepress-plugin-sitemap": "^2.1.2"
+  }
+}
